@@ -1,0 +1,31 @@
+.book {
+    padding: 50px 0 60px;
+    .container {
+        padding-top: 40px ;
+        display: block;
+        text-subtitle {
+            width: none;
+            display: none;
+        }
+        .title {
+            max-width: none;
+        }
+        .form {
+            display: grid;
+            grid-template-columns: repeat(2, 285px);
+            grid-template-rows: repeat(5, 50px);
+            gap: 20px;
+            &__textarea {
+                grid-column: 1/3;
+                grid-row: 3/6;
+            }
+            &__button {
+                width: 215px;
+                margin-bottom: 40px;
+            }
+            &__select {
+                width: 285px;
+            }
+        }
+    }
+}
