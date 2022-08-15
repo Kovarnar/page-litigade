@@ -1,0 +1,56 @@
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    z-index: 100;
+}
+
+.wrapper {
+    height: 100px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: auto;
+}
+
+.logo-top {
+    left: 0;
+}
+
+.buttons {
+    margin-right: 80px;
+}
+
+.toggler .icon {
+    right: 0;
+}
+
+.shopping .icon {
+    position: static;
+}
+
+.search .icon {
+    position: static;
+    margin-right: 22px;
+}
+
+.nav-bar {
+    overflow: hidden;
+    top: 0;
+    margin-right: 42px;
+
+
+    .menu-item {
+        display: inline-flex;
+        margin-right: 26px;
+        margin-bottom: 0;
+    }
+
+    .menu-item a {
+        font-size: $baseFontSize;
+    }
+}

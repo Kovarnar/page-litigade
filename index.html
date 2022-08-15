@@ -17,7 +17,42 @@
     <!--                 HEADER                  -->
     <header class="header">
         <div class="container">
-
+            <div class="wrapper">
+                <h2 class="logo-top">Litigade</h2>
+                <nav class="nav-bar">
+                    <ul class="menu" id="collapse">
+                        <li class="menu-item">
+                            <a href="#">Home</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">Product</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">Pricing</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="buttons">
+                    <button class="search" type="button">
+                        <svg class="icon">
+                            <use xlink:href="./img/sprite.svg#search"></use>
+                        </svg>
+                    </button>
+                    <button class="shopping" type="button">
+                        <svg class="icon">
+                            <use xlink:href="./img/sprite.svg#shopping"></use>
+                        </svg>
+                    </button>
+                </div>
+                <button onclick="myFunction()" class="toggler" type="button">
+                    <svg class="icon">
+                        <use xlink:href="./img/sprite.svg#burger"></use>
+                    </svg>
+                </button>
+            </div>
         </div>
     </header>
     <!--                 MAIN                  -->
@@ -25,7 +60,53 @@
         <!--                 FULL SCRIN                  -->
         <section class="help">
             <div class="container">
-
+                <div class="left-part">
+                    <h2>Help to reclaim your life and freedom</h2>
+                    <p>We know how large objects will act, but things on a
+                        small scale.</p>
+                    <div class="reference">
+                        <a href="#" class="item-brown">Get Quote Now</a>
+                        <a href="#" class="item-transparent">Learn More</a>
+                    </div>
+                </div>
+                <div class="right-part">
+                    <h3>Book Appointment</h3>
+                    <form action="#">
+                        <label>
+                            Name*
+                            <input type="text" name="full name" placeholder="Full Name">
+                        </label>
+                        <label>
+                            Email*
+                            <input type="email" name="email" placeholder="example@gmail.com">
+                        </label>
+                        <label>
+                            Department *
+                            <select name="department">
+                                <option value="department">Please Select</option>
+                                <option value="department">List Entry #1</option>
+                                <option value="department">List Entry #2</option>
+                                <option value="department">List Entry #3</option>
+                                <option value="department">List Entry #4</option>
+                                <option value="department">List Entry #5</option>
+                            </select>
+                        </label>
+                        <label class="last">
+                            Time *
+                            <select name="time">
+                                <option value="time">4:00 Available</option>
+                                <option value="time">List Entry #1</option>
+                                <option value="time">List Entry #2</option>
+                                <option value="time">List Entry #3</option>
+                                <option value="time">List Entry #4</option>
+                                <option value="time">List Entry #5</option>
+                            </select>
+                        </label>
+                        <label>
+                            <button type="submit" class="appointment">Book Appointment</button>
+                        </label>
+                    </form>
+                </div>
             </div>
         </section>
         <!--                 ABOUT                  -->
@@ -283,20 +364,20 @@
                     <input type="text" name="name" class="form__input" placeholder="Full Name">
                     <input type="email" name="email" class="form__input" placeholder="example@gmail.com">
                     <div class="fake-check">
-                    <select name="department" class="form__select">
-                        <option value="" disabled selected>Please Select</option>
-                        <option value="value-1">Frauds or Mislead</option>
-                        <option value="value-2">Bailes & Warrants</option>
-                        <option value="value-3">Federal Drug Crimes</option>
-                    </select>
+                        <select name="department" class="form__select">
+                            <option value="" disabled selected>Please Select</option>
+                            <option value="value-1">Frauds or Mislead</option>
+                            <option value="value-2">Bailes & Warrants</option>
+                            <option value="value-3">Federal Drug Crimes</option>
+                        </select>
                     </div>
                     <div class="fake-check">
-                    <select name="time" class="form__select">
-                        <option value="" disabled selected>16:00 Available</option>
-                        <option value="value-1">13:00</option>
-                        <option value="value-2">14:00</option>
-                        <option value="value-3">15:00</option>
-                    </select>
+                        <select name="time" class="form__select">
+                            <option value="" disabled selected>16:00 Available</option>
+                            <option value="value-1">13:00</option>
+                            <option value="value-2">14:00</option>
+                            <option value="value-3">15:00</option>
+                        </select>
                     </div>
                     <textarea name="textarea" class="form__textarea">Message</textarea>
                     <button type="button" class="form__button">Book Appointment</button>
@@ -308,8 +389,8 @@
                 <div class="flex">
                     <h3>Request a free consultation</h3>
                     <p>the quick fox jumps over the lazy dog</p>
-                    </div>
-                    <button type="button" class="button">Contact Us</button>
+                </div>
+                <button type="button" class="button">Contact Us</button>
             </div>
         </section>
     </main>
@@ -440,7 +521,14 @@
 
     </footer>
     <script>
-
+        function myFunction() {
+            var x = document.getElementById("collapse");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
     </script>
 </body>
 
