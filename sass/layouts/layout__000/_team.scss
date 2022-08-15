@@ -1,0 +1,34 @@
+.team-list__item {
+    border: 1px solid $superLightGrayColor;
+}
+.team-list__avatar {
+    width: 100%;
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+.team-list__person {
+    padding: 30px 50px;
+    text-align: center;
+    span {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: 700;
+    }
+    .team-list-person__name {
+        font-family: $fontMartel;
+        font-size: rem(16px);
+        color: $textColor;
+        line-height: 1.5;
+        letter-spacing: rem(0.1px);
+    }
+    .team-list-person__job{
+        font-family: $fontOpenSans;
+        font-size: rem(14px);
+        color: $secondTextColor;
+        line-height: 1.7;
+        letter-spacing: rem(0.2px);
+        text-transform: uppercase;
+    }
+}

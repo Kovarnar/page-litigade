@@ -1,0 +1,46 @@
+.about{
+    margin: 0 auto;
+    &.advise {
+        padding: 98px 0 68px;
+    }
+    &.presentation {
+        padding: 98px 0 180px;
+    }
+    &.comments{
+        padding: 75px 0 108px;
+    }
+    &.team {
+        padding: 75px 0 138px;
+    }
+    &__title {
+        font-family: $fontMartel;
+        font-size: rem(40px);
+        font-weight: 700;
+        line-height: 1.25;
+        letter-spacing: rem(0.2px);
+        text-align: center;
+        color: $textColor;
+        margin: 0 auto 10px;
+        max-width: 260px; 
+    }
+    &__text{
+        font-size: rem(14px);
+        font-family: $fontOpenSans;
+        font-weight: 400;
+        line-height: 1.42;
+        letter-spacing: rem(0.2px);
+        text-align: center;
+        color: $secondTextColor;
+        margin: 0 auto 75px;
+        max-width: 235px;
+    }
+    &__list{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    .about-list__item {
+        max-width: 330px;
+    }
+}
