@@ -82,7 +82,7 @@
 
     }
 
-    button {
+    .last-button {
         width: 116px;
         border-left: 1px solid $mutedColor;
         background-color: $primaryColor;
@@ -94,8 +94,14 @@
         letter-spacing: 0.2px;
         border: 1px solid $mutedColor;
         border-radius: 0px 5px 5px 0px;
-
+        cursor: pointer;
     }
+
+    .last-button:hover {
+        background-color: $secondaryColor2;
+        border: transparent;
+    }
+
 }
 
 .subtitle {

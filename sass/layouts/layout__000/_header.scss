@@ -51,6 +51,10 @@
     height: 14px;
 }
 
+.toggler .icon:hover {
+    transform: scale(130%);
+}
+
 .search .icon:hover {
     transform: scale(150%);
 }

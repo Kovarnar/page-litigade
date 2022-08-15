@@ -1,14 +1,17 @@
 .consultation {
     background-color: $superLightColor;
     padding: 40px 0;
+
     .container {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+
     .flex {
         max-width: 285px;
     }
+
     h3 {
         font-family: $fontMartel;
         font-size: 1.7rem;
@@ -18,7 +21,8 @@
         text-transform: capitalize;
         margin-bottom: 10px;
     }
-    p{
+
+    p {
         max-width: 187px;
         font-family: $fontOpenSans;
         font-size: $baseFontSize;
@@ -27,6 +31,7 @@
         color: #737373;
         margin-bottom: 50px;
     }
+
     .button {
         width: 285px;
         height: 58px;
@@ -39,8 +44,9 @@
         border-radius: 5px;
         padding: 0;
         cursor: pointer;
+
         &:hover {
-            background-color: #a36a44;
+            background-color: $primaryColor;
         }
     }
 }

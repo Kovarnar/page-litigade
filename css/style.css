@@ -446,7 +446,7 @@ li {
   color: #BDBDBD;
   font-family: "Montserrat", sans-serif;
 }
-.input button {
+.input .last-button {
   width: 116px;
   border-left: 1px solid #BDBDBD;
   background-color: #D0A144;
@@ -458,6 +458,11 @@ li {
   letter-spacing: 0.2px;
   border: 1px solid #BDBDBD;
   border-radius: 0px 5px 5px 0px;
+  cursor: pointer;
+}
+.input .last-button:hover {
+  background-color: #784F33;
+  border: transparent;
 }
 
 .subtitle {
@@ -562,7 +567,7 @@ li {
   cursor: pointer;
 }
 .book .container .form__button:hover {
-  background-color: #a36a44;
+  background-color: #D0A144;
 }
 
 .fake-check {
@@ -627,7 +632,7 @@ li {
   cursor: pointer;
 }
 .consultation .button:hover {
-  background-color: #a36a44;
+  background-color: #D0A144;
 }
 
 .help .container {
@@ -635,8 +640,10 @@ li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url("../img/cover-mob.png");
-  background-repeat: repeat;
+  background-image: url("../img/background-1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .help .left-part {
@@ -782,6 +789,7 @@ li {
   height: 58px;
   background: #295C7A;
   border-radius: 5px;
+  border-color: transparent;
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
   font-size: 14px;
@@ -791,7 +799,7 @@ li {
   margin-bottom: 40px;
 }
 .help .right-part form .appointment:hover {
-  background: #335BF5;
+  background: #21A6DF;
 }
 
 .header {
@@ -845,6 +853,10 @@ li {
   display: block;
   width: 22px;
   height: 14px;
+}
+
+.toggler .icon:hover {
+  transform: scale(130%);
 }
 
 .search .icon:hover {
@@ -909,11 +921,6 @@ li {
   }
   .input input {
     width: 400px;
-  }
-  .help {
-    background-image: url("../img/background-1.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
   }
   .help .container {
     display: flex;
