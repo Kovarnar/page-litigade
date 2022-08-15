@@ -3,8 +3,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url("../img/cover-mob.png");
-    background-repeat: repeat;
+    background-image: url("../img/background-1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .help {
@@ -164,6 +166,7 @@
                 height: 58px;
                 background: $darkBlueColor;
                 border-radius: 5px;
+                border-color: transparent;
                 font-family: $fontOpenSans;
                 font-weight: 700;
                 font-size: $baseFontSize;
@@ -174,7 +177,7 @@
             }
 
             .appointment:hover {
-                background: $blueColor;
+                background: $twitterColor;
             }
         }
     }
