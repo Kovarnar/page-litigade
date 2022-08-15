@@ -1,0 +1,90 @@
+.header {
+    min-height: 90px;
+}
+
+.wrapper {
+    margin-bottom: 100px;
+}
+
+.logo-top {
+    font-family: $fontMartel;
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: 0.1px;
+    color: $textColor;
+    position: absolute;
+    top: 35px;
+    left: 30px;
+}
+
+.shopping,
+.search,
+.toggler {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.shopping .icon {
+    position: absolute;
+    top: 40px;
+    right: 90px;
+    display: block;
+    width: 16px;
+    height: 16px;
+}
+
+.search .icon {
+    position: absolute;
+    top: 40px;
+    right: 140px;
+    width: 16px;
+    height: 16px;
+}
+
+.toggler .icon {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    display: block;
+    width: 22px;
+    height: 14px;
+}
+
+.search .icon:hover {
+    transform: scale(150%);
+}
+
+.shopping .icon:hover {
+    transform: scale(150%);
+}
+
+.nav-bar {
+    overflow: hidden;
+    position: relative;
+    top: 100px;
+
+    .menu {
+        display: none;
+    }
+
+    .menu-item {
+        text-align: center;
+        padding: 0 5px;
+        margin-bottom: 30px;
+    }
+
+    .menu-item a {
+        font-family: $fontOpenSans;
+        font-weight: 600;
+        font-size: 30px;
+        text-align: center;
+        text-decoration: none;
+        letter-spacing: 0.2px;
+        color: $secondTextColor;
+    }
+
+    .menu-item a:hover {
+        color: $textColor;
+    }
+}

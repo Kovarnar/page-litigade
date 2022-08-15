@@ -1,0 +1,181 @@
+.help .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img/cover-mob.png");
+    background-repeat: repeat;
+}
+
+.help {
+    .left-part {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+
+        h2 {
+            margin-top: 90px;
+            max-width: 323px;
+            font-family: $fontMartel;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 40px;
+            text-align: center;
+            letter-spacing: 0.2px;
+            line-height: 50px;
+            color: $textColor;
+            margin-bottom: 35px;
+        }
+
+        p {
+            max-width: 376px;
+            font-family: $fontMontserrat;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            text-align: center;
+            letter-spacing: 0.2px;
+            line-height: 30px;
+            color: $secondTextColor;
+            margin-bottom: 35px;
+        }
+
+        .reference {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 100px;
+        }
+
+        .reference .item-brown {
+            width: 182px;
+            height: 48px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: $secondaryColor2;
+            border-radius: 37px;
+            font-family: $fontOpenSans;
+            font-weight: 700;
+            font-size: $baseFontSize;
+            text-align: center;
+            letter-spacing: 0.2px;
+            color: $whiteColor;
+            padding: 10px 36px;
+            text-decoration: none;
+        }
+
+        .reference .item-brown:hover {
+            background: $primaryColor;
+        }
+
+        .reference .item-transparent {
+            width: 162px;
+            height: 48px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid $secondaryColor2;
+            border-radius: 37px;
+            font-family: $fontOpenSans;
+            font-weight: 700;
+            font-size: $baseFontSize;
+            text-align: center;
+            letter-spacing: 0.2px;
+            color: $secondaryColor2;
+            padding: 10px 36px;
+            text-decoration: none;
+        }
+
+        .reference .item-transparent:hover {
+            color: $primaryColor;
+            border-color: $primaryColor;
+        }
+    }
+
+    .right-part {
+        width: 328px;
+        height: 619px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: $whiteColor;
+        margin-bottom: 90px;
+
+
+        h3 {
+            width: 234px;
+            font-family: $fontMartel;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 32px;
+            text-align: center;
+            letter-spacing: 0.1px;
+            color: $textColor;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+
+        form {
+            width: 248px;
+            height: 369px;
+            margin: 0 40px 40px 40px;
+
+            label {
+                display: block;
+                font-family: $fontOpenSans;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 24px;
+                letter-spacing: 0.2px;
+                color: $textColor;
+                margin-bottom: 12px;
+            }
+
+            label:nth-child(4) {
+                margin-bottom: 40px;
+            }
+
+            input,
+            select {
+                width: 245px;
+                height: 50px;
+                border: 1px $mutedColor;
+                border-radius: 5px;
+                margin-top: 10px;
+                background: $formColor;
+                font-family: $fontMontserrat;
+                font-style: normal;
+                font-weight: 400;
+                font-size: $baseFontSize;
+                text-indent: 21px;
+                letter-spacing: 0.2px;
+                color: $secondTextColor;
+            }
+
+            .appointment {
+                width: 248px;
+                height: 58px;
+                background: $darkBlueColor;
+                border-radius: 5px;
+                font-family: $fontOpenSans;
+                font-weight: 700;
+                font-size: $baseFontSize;
+                text-align: center;
+                letter-spacing: 0.2px;
+                color: $whiteColor;
+                margin-bottom: 40px;
+            }
+
+            .appointment:hover {
+                background: $blueColor;
+            }
+        }
+    }
+}
