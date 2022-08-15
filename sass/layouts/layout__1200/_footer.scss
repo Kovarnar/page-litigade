@@ -1,0 +1,25 @@
+.footer__top {
+
+    .logo {
+        padding-bottom: 0;
+        padding-left: 0;
+    }
+}
+
+.footer__bottom {
+    display: grid;
+    column-gap: 30px;
+    grid-template-columns: 148px 152px 148px 152px 321px;
+    justify-content: normal;
+
+    .bottom__item:last-child {
+        grid-column: 5/6;
+    }
+}
+
+.input {
+
+    input {
+        width: inherit;
+    }
+}
