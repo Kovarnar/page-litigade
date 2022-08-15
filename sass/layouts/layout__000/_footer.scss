@@ -1,0 +1,123 @@
+.info {
+    background-color: $textColor;
+}
+
+.footer__top {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px 0;
+    border-bottom: 1px solid $lightPurple;
+
+    .logo {
+        font-family: $fontMartel;
+        color: $whiteColor;
+        font-size: rem(24px);
+        line-height: 1.33;
+        margin-bottom: 50px;
+    }
+}
+
+
+.social__list {
+    display: flex;
+    margin-right: 40px;
+}
+
+.social__item:not(:last-child) {
+    margin-right: 20px;
+}
+
+.footer__bottom {
+    padding: 70px 0;
+    display: grid;
+    grid-template-columns: 321px;
+}
+
+.bottom__item {
+    h5 {
+        font-family: $fontMartel;
+        color: $whiteColor;
+        font-size: rem(16px);
+        line-height: 1.5;
+        letter-spacing: 0.1px;
+        margin-bottom: 20px;
+    }
+}
+
+.list__item {
+    margin-bottom: 10px;
+
+    a {
+        font-family: $fontOpenSans;
+        color: $mutedColor;
+        font-size: $baseFontSize;
+        line-height: 1.7;
+        letter-spacing: 0.2px;
+
+        &:hover {
+            color: $whiteColor;
+        }
+    }
+}
+
+.input {
+    display: flex;
+    width: fit-content;
+    height: 56px;
+
+    input {
+        border: 1px solid $mutedColor;
+        border-radius: 5px 0 0 5px;
+    }
+
+    input::placeholder {
+        padding: 15px 20px;
+        font-size: $baseFontSize;
+        line-height: 2;
+        letter-spacing: 0.2px;
+        color: $mutedColor;
+        font-family: $fontMontserrat;
+
+    }
+
+    button {
+        width: 116px;
+        border-left: 1px solid $mutedColor;
+        background-color: $primaryColor;
+        color: $whiteColor;
+        font-family: $fontMontserrat;
+        font-size: $baseFontSize;
+        line-height: 2;
+        text-align: center;
+        letter-spacing: 0.2px;
+        border: 1px solid $mutedColor;
+        border-radius: 0px 5px 5px 0px;
+
+    }
+}
+
+.subtitle {
+    font-family: $fontMontserrat;
+    color: $mutedColor;
+    font-size: rem(12px);
+    line-height: 2.3;
+    letter-spacing: 0.2px;
+
+}
+
+.rights {
+    background: linear-gradient(270deg, #295C7A -1.04%, #0072B5 100%);
+    padding: 25px 0;
+
+
+    p {
+        font-family: $fontOpenSans;
+        color: $whiteColor;
+        font-size: $baseFontSize;
+        line-height: 1.7;
+        letter-spacing: 0.2px;
+        width: fit-content;
+        text-align: center;
+    }
+}
