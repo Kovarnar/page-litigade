@@ -1,0 +1,11 @@
+.about{
+    &.advise, &.presentation, &.comments,&.team {
+        padding: 80px 0;
+    }    
+    &__title {
+        max-width: 100%;
+    }
+    &__text{
+        max-width: 430px;
+    }
+}

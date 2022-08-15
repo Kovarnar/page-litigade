@@ -1,0 +1,39 @@
+.comments {
+    background-color: $superLightColor;
+}
+.comments-list__item {
+    padding: 30px 35px;
+    font-family: $fontOpenSans;
+    font-size: rem(14px);
+    line-height: 1.3;
+    letter-spacing: rem(0.2px);
+    background-color: $whiteColor;
+    border-radius: 5px;
+    border: 1px solid $grayColor;
+    .comments-list__text {
+        font-weight: 700;
+        color: $secondTextColor;
+        margin-bottom: 20px;
+    }
+    .comments-list__person {
+        display: flex;
+        img { 
+            margin-right: 15px;
+        }
+        .comments-list-person__info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            span {
+                &:first-child {
+                    font-weight: 600;
+                    color: $primaryColor;
+                }
+                &:last-child {
+                    font-weight: 700;
+                    color: $textColor;
+                }
+            }
+        }
+    }
+}
