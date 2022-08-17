@@ -1,34 +1,33 @@
-.info {
+.footer {
     background-color: $textColor;
 }
 
 .footer__top {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     padding: 40px 0;
-    border-bottom: 1px solid $lightPurple;
+}
+
+.footer-top__logo {
+    margin-bottom: 50px;
+    .icon {
+        width: 100px;
+        height: 32px;
+        color: $whiteColor;
+    }
 }
 
 
-.social__list {
-    display: flex;
-    margin-right: 40px;
-}
-
-.social__item:not(:last-child) {
-    margin-right: 20px;
-}
 
 .footer__bottom {
     padding: 70px 0;
     display: grid;
     grid-template-columns: 321px;
-    gap: 20px;
+    gap: 30px;
 }
 
 .bottom__item {
-    h5 {
+    h4 {
         font-family: $fontMartel;
         color: $whiteColor;
         font-size: rem(16px);
@@ -39,7 +38,9 @@
 }
 
 .list__item {
-    margin-bottom: 10px;
+    &:not(:last-child) {
+        margin-bottom: 10px;
+    }
 
     a {
         font-family: $fontOpenSans;
@@ -105,18 +106,18 @@
 
 }
 
-.rights {
-    background: linear-gradient(270deg, #295C7A -1.04%, #0072B5 100%);
-    padding: 25px 0;
-
-
-    p {
-        font-family: $fontOpenSans;
-        color: $whiteColor;
-        font-size: $baseFontSize;
-        line-height: 1.7;
-        letter-spacing: 0.2px;
-        width: fit-content;
-        text-align: center;
+.footer {
+    .footer__right {
+        background: linear-gradient(270deg, #295C7A -1.04%, #0072B5 100%);
+        padding: 25px 0;
+        p {
+            font-family: $fontOpenSans;
+            color: $whiteColor;
+            font-size: $baseFontSize;
+            line-height: 1.7;
+            letter-spacing: 0.2px;
+            width: fit-content;
+            text-align: center;
+        }
     }
 }
