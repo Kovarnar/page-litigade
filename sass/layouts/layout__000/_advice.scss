@@ -26,10 +26,15 @@
         font-size: rem(14px);
         line-height: 1.3;
         letter-spacing: rem(0.2px);
+        ul{
+            margin-bottom: 5px;
+        }
         li {
             font-weight: 700;
             color: $secondTextColor;
-            margin-bottom: 5px;
+            &:not(:last-child) {
+                margin-bottom: 5px;
+            }
         }
         a {
             font-weight: 600;

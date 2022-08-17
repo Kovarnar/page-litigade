@@ -113,6 +113,7 @@ li {
 .advise-list__icon .icon {
   max-width: 32px;
   max-height: 32px;
+  fill: #D0A144;
 }
 
 .comments-list__stars {
@@ -123,6 +124,7 @@ li {
 .comments-list__stars .icon {
   width: 18.34px;
   height: 18.35px;
+  fill: #F3CD03;
 }
 .comments-list__stars .icon:not(:last-child) {
   margin-right: 1.83px;
@@ -133,11 +135,11 @@ li {
   flex-direction: row;
   justify-content: center;
 }
+.team-list__social li {
+  font-size: 0;
+}
 .team-list__social li:not(:last-child) {
   margin-right: 10px;
-}
-.team-list__social a {
-  font-size: 0;
 }
 .team-list__social .icon {
   width: 24px;
@@ -158,11 +160,6 @@ li {
 }
 .footer .social__list {
   display: flex;
-}
-.footer .social__list .social__item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .footer .social__list .social__item:not(:last-child) {
   margin-right: 20px;
@@ -255,9 +252,14 @@ li {
   line-height: 1.3;
   letter-spacing: 0.0142857143rem;
 }
+.advise-list__item .advise-list__text ul {
+  margin-bottom: 5px;
+}
 .advise-list__item .advise-list__text li {
   font-weight: 700;
   color: #737373;
+}
+.advise-list__item .advise-list__text li:not(:last-child) {
   margin-bottom: 5px;
 }
 .advise-list__item .advise-list__text a {
@@ -370,6 +372,7 @@ li {
 
 .team-list__avatar {
   width: 100%;
+  font-size: 0;
 }
 .team-list__avatar img {
   width: 100%;
