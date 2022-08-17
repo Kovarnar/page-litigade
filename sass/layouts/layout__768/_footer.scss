@@ -2,32 +2,25 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    text-align: center;
     padding-bottom: 40px;
-}
-
-.footer-top__logo {
-    margin-bottom: 0;
-
+    border-bottom: 1px solid $lightPurple;
+    .footer-top__logo {
+        margin: 0;
+    }
 }
 
 .footer__bottom {
     display: grid;
     grid-template-columns: 148px 152px 148px 152px;
-    justify-content: space-around;
-
-
+    justify-content: space-between;
     .bottom__item:last-child {
         grid-column: 1 / span 2;
     }
 }
 
 .input {
-
     input {
-
         width: 400px;
     }
-
-
-
 }

@@ -10,6 +10,11 @@
     background-color: $whiteColor;
     border-radius: 5px;
     border: 1px solid $grayColor;
+    .comments-list__stars {
+        li {
+            font-size: 0;
+        }
+    }
     .comments-list__text {
         font-weight: 700;
         color: $secondTextColor;
@@ -19,6 +24,7 @@
         display: flex;
         img { 
             margin-right: 15px;
+            overflow: hidden;
         }
         .comments-list-person__info {
             display: flex;

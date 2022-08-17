@@ -5,10 +5,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Primary Meta Tags -->
     <title>Litigade</title>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Martel:wght@700;900&family=Montserrat:wght@400;500;700&family=Open+Sans:wght@400;600;700&display=swap"
-        rel="stylesheet">
+    <meta name="title" content="litigade">
+    <meta name="description" content="consulting organization">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kovarnar.github.io/page-litigade/">
+    <meta property="og:title" content="litigade">
+    <meta property="og:description" content="consulting organization">
+    <meta property="og:image" content="https://consulting.wiki/wp-content/uploads/2018/03/gears-1080x675.jpg">
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://kovarnar.github.io/page-litigade/">
+    <meta property="twitter:title" content="litigade">
+    <meta property="twitter:description" content="consulting organization">
+    <meta property="twitter:image" content="https://consulting.wiki/wp-content/uploads/2018/03/gears-1080x675.jpg">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Martel:wght@700;900&family=Montserrat:wght@400;500;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -18,7 +32,11 @@
     <header class="header">
         <div class="container">
             <div class="wrapper">
-                <h2 class="logo-top">Litigade</h2>
+                <div class="footer-top__logo">
+                    <svg class="icon">
+                        <use xlink:href="./img/sprite.svg#logo"></use>
+                    </svg>
+                </div>
                 <nav class="nav-bar">
                     <ul class="menu" id="collapse">
                         <li class="menu-item">
@@ -133,7 +151,7 @@
                                 <li>- Fastest way to organize</li>
                                 <li>- Work at the speed of thought.</li>
                             </ul>
-                            <a>Learn More</a>
+                            <a href="#">Learn More</a>
                         </div>
                     </li>
                     <li class="about-list__item advise-list__item">
@@ -153,7 +171,7 @@
                                 <li>- Fastest way to organize</li>
                                 <li>- Work at the speed of thought.</li>
                             </ul>
-                            <a>Learn More</a>
+                            <a href="#">Learn More</a>
                         </div>
                     </li>
                     <li class="about-list__item advise-list__item">
@@ -173,7 +191,7 @@
                                 <li>- Fastest way to organize</li>
                                 <li>- Work at the speed of thought.</li>
                             </ul>
-                            <a>Learn More</a>
+                            <a href="#">Learn More</a>
                         </div>
                     </li>
                 </ul>
@@ -182,11 +200,10 @@
         <section class="about presentation">
             <div class="container">
                 <h3 class="about__title">Who We Are</h3>
-                <p class="about__text">Problems trying to resolve the conflict between the two major realms of Classical
-                    physics: Newtonian mechanics </p>
+                <p class="about__text">Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics </p>
                 <div class="presentation__item">
                     <img src="./img/bg-cover.jpg" alt="presentation litigade" width="877" height="442">
-                    <a class="presentation__play">
+                    <a class="presentation__play" href="#" target="_blank" rel="noopener">
                         <div class="presentation__run"></div>
                     </a>
                 </div>
@@ -195,31 +212,40 @@
         <section class="about comments">
             <div class="container">
                 <h3 class="about__title">What Clients Say</h3>
-                <p class="about__text">Problems trying to resolve the conflict between the two major realms of Classical
-                    physics: Newtonian mechanics </p>
+                <p class="about__text">Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics </p>
                 <ul class="about__list comments__list">
                     <li class="about-list__item comments-list__item">
-                        <div class="comments-list__stars">
-                            <svg class="icon">
-                                <use xlink:href="./img/sprite.svg#gold-star"></use>
-                            </svg>
-                            <svg class="icon">
-                                <use xlink:href="./img/sprite.svg#gold-star"></use>
-                            </svg>
-                            <svg class="icon">
-                                <use xlink:href="./img/sprite.svg#gold-star"></use>
-                            </svg>
-                            <svg class="icon">
-                                <use xlink:href="./img/sprite.svg#gold-star"></use>
-                            </svg>
-                            <svg class="icon">
-                                <use xlink:href="./img/sprite.svg#star"></use>
-                            </svg>
-                        </div>
+                        <ul class="comments-list__stars">
+                            <li>
+                                <svg class="icon">
+                                    <use xlink:href="./img/sprite.svg#gold-star"></use>
+                                </svg>
+                            </li>
+                            <li>
+                                <svg class="icon">
+                                    <use xlink:href="./img/sprite.svg#gold-star"></use>
+                                </svg>
+                            </li>
+                            <li>
+                                <svg class="icon">
+                                    <use xlink:href="./img/sprite.svg#gold-star"></use>
+                                </svg>
+                            </li>
+                            <li>
+                                <svg class="icon">
+                                    <use xlink:href="./img/sprite.svg#gold-star"></use>
+                                </svg>
+                            </li>
+                            <li>
+                                <svg class="icon">
+                                    <use xlink:href="./img/sprite.svg#star"></use>
+                                </svg>
+                            </li>
+                        </ul>
                         <p class="comments-list__text">Slate helps you see how many more days you need to work to reach
                             your financial goal.</p>
                         <div class="comments-list__person">
-                            <img src="./img/client.jpg" alt="avatar">
+                            <img src="./img/client.jpg" alt="avatar" width="50" height="50">
                             <div class="comments-list-person__info">
                                 <span>Regina Miles</span>
                                 <span>Designer</span>
@@ -228,27 +254,37 @@
                         </div>
                     </li>
                     <li class="about-list__item comments-list__item">
-                        <div class="comments-list__stars">
-                            <svg class="icon">
-                                <use xlink:href="./img/sprite.svg#gold-star"></use>
-                            </svg>
-                            <svg class="icon">
-                                <use xlink:href="./img/sprite.svg#gold-star"></use>
-                            </svg>
-                            <svg class="icon">
-                                <use xlink:href="./img/sprite.svg#gold-star"></use>
-                            </svg>
-                            <svg class="icon">
-                                <use xlink:href="./img/sprite.svg#gold-star"></use>
-                            </svg>
-                            <svg class="icon">
-                                <use xlink:href="./img/sprite.svg#star"></use>
-                            </svg>
-                        </div>
+                        <ul class="comments-list__stars">
+                            <li>
+                                <svg class="icon">
+                                    <use xlink:href="./img/sprite.svg#gold-star"></use>
+                                </svg>
+                            </li>
+                            <li>
+                                <svg class="icon">
+                                    <use xlink:href="./img/sprite.svg#gold-star"></use>
+                                </svg>
+                            </li>
+                            <li>
+                                <svg class="icon">
+                                    <use xlink:href="./img/sprite.svg#gold-star"></use>
+                                </svg>
+                            </li>
+                            <li>
+                                <svg class="icon">
+                                    <use xlink:href="./img/sprite.svg#gold-star"></use>
+                                </svg>
+                            </li>
+                            <li>
+                                <svg class="icon">
+                                    <use xlink:href="./img/sprite.svg#star"></use>
+                                </svg>
+                            </li>
+                        </ul>
                         <p class="comments-list__text">Slate helps you see how many more days you need to work to reach
                             your financial goal.</p>
                         <div class="comments-list__person">
-                            <img src="./img/client.jpg" alt="avatar">
+                            <img src="./img/client.jpg" alt="avatar" width="50" height="50">
                             <div class="comments-list-person__info">
                                 <span>Regina Miles</span>
                                 <span>Designer</span>
@@ -256,27 +292,37 @@
                         </div>
                     </li>
                     <li class="about-list__item comments-list__item">
-                        <div class="comments-list__stars">
-                            <svg class="icon">
-                                <use xlink:href="./img/sprite.svg#gold-star"></use>
-                            </svg>
-                            <svg class="icon">
-                                <use xlink:href="./img/sprite.svg#gold-star"></use>
-                            </svg>
-                            <svg class="icon">
-                                <use xlink:href="./img/sprite.svg#gold-star"></use>
-                            </svg>
-                            <svg class="icon">
-                                <use xlink:href="./img/sprite.svg#gold-star"></use>
-                            </svg>
-                            <svg class="icon">
-                                <use xlink:href="./img/sprite.svg#star"></use>
-                            </svg>
-                        </div>
+                        <ul class="comments-list__stars">
+                            <li>
+                                <svg class="icon">
+                                    <use xlink:href="./img/sprite.svg#gold-star"></use>
+                                </svg>
+                            </li>
+                            <li>
+                                <svg class="icon">
+                                    <use xlink:href="./img/sprite.svg#gold-star"></use>
+                                </svg>
+                            </li>
+                            <li>
+                                <svg class="icon">
+                                    <use xlink:href="./img/sprite.svg#gold-star"></use>
+                                </svg>
+                            </li>
+                            <li>
+                                <svg class="icon">
+                                    <use xlink:href="./img/sprite.svg#gold-star"></use>
+                                </svg>
+                            </li>
+                            <li>
+                                <svg class="icon">
+                                    <use xlink:href="./img/sprite.svg#star"></use>
+                                </svg>
+                            </li>
+                        </ul>
                         <p class="comments-list__text">Slate helps you see how many more days you need to work to reach
                             your financial goal.</p>
                         <div class="comments-list__person">
-                            <img src="./img/client.jpg" alt="avatar">
+                            <img src="./img/client.jpg" alt="avatar" width="50" height="50">
                             <div class="comments-list-person__info">
                                 <span>Regina Miles</span>
                                 <span>Designer</span>
@@ -289,67 +335,102 @@
         <section class="about team">
             <div class="container">
                 <h3 class="about__title">Meet Our Attorneys</h3>
-                <p class="about__text">Problems trying to resolve the conflict between the two major realms of Classical
-                    physics: Newtonian mechanics </p>
+                <p class="about__text">Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics </p>
                 <ul class="about__list team__list">
                     <li class="about-list__item team-list__item">
                         <div class="team-list__avatar">
-                            <img src="./img/photo-1.jpg" alt="avatar LAYER & CEO">
+                            <img src="./img/photo-1.jpg" alt="avatar LAYER & CEO" width="328" height="231">
                         </div>
                         <div class="team-list__person">
                             <span class="team-list-person__name">Ashley Fletcher</span>
                             <span class="team-list-person__job">LAYER & CEO</span>
-                            <div class="team-list__social">
-                                <svg class="icon">
-                                    <use xlink:href="./img/sprite.svg#face"></use>
-                                </svg>
-                                <svg class="icon">
-                                    <use xlink:href="./img/sprite.svg#insta"></use>
-                                </svg>
-                                <svg class="icon">
-                                    <use xlink:href="./img/sprite.svg#twit"></use>
-                                </svg>
-                            </div>
+                            <ul class="team-list__social">
+                                <li>
+                                    <a href="#" target="_blank" rel="noopener">
+                                        <svg class="icon">
+                                            <use xlink:href="./img/sprite.svg#face"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank" rel="noopener">
+                                        <svg class="icon">
+                                            <use xlink:href="./img/sprite.svg#insta"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank" rel="noopener">
+                                        <svg class="icon">
+                                            <use xlink:href="./img/sprite.svg#twit"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </li>
                     <li class="about-list__item team-list__item">
                         <div class="team-list__avatar">
-                            <img src="./img/photo-2.jpg" alt="avatar LAYER & CEO">
+                            <img src="./img/photo-2.jpg" alt="avatar LAYER & CEO"  width="328" height="231">
                         </div>
                         <div class="team-list__person">
                             <span class="team-list-person__name">Rodney Stratton</span>
                             <span class="team-list-person__job">CEO</span>
-                            <div class="team-list__social">
-                                <svg class="icon">
-                                    <use xlink:href="./img/sprite.svg#face"></use>
-                                </svg>
-                                <svg class="icon">
-                                    <use xlink:href="./img/sprite.svg#insta"></use>
-                                </svg>
-                                <svg class="icon">
-                                    <use xlink:href="./img/sprite.svg#twit"></use>
-                                </svg>
-                            </div>
+                            <ul class="team-list__social">
+                                <li>
+                                    <a href="#" target="_blank" rel="noopener">
+                                        <svg class="icon">
+                                            <use xlink:href="./img/sprite.svg#face"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank" rel="noopener">
+                                        <svg class="icon">
+                                            <use xlink:href="./img/sprite.svg#insta"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank" rel="noopener">
+                                        <svg class="icon">
+                                            <use xlink:href="./img/sprite.svg#twit"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </li>
                     <li class="about-list__item team-list__item">
                         <div class="team-list__avatar">
-                            <img src="./img/photo-3.jpg" alt="avatar LAYER & CEO">
+                            <img src="./img/photo-3.jpg" alt="avatar LAYER & CEO"  width="328" height="231">
                         </div>
                         <div class="team-list__person">
                             <span class="team-list-person__name">Avie Beaton</span>
                             <span class="team-list-person__job">LAYER CIVIL LAW</span>
-                            <div class="team-list__social">
-                                <svg class="icon">
-                                    <use xlink:href="./img/sprite.svg#face"></use>
-                                </svg>
-                                <svg class="icon">
-                                    <use xlink:href="./img/sprite.svg#insta"></use>
-                                </svg>
-                                <svg class="icon">
-                                    <use xlink:href="./img/sprite.svg#twit"></use>
-                                </svg>
-                            </div>
+                            <ul class="team-list__social">
+                                <li>
+                                    <a href="#" target="_blank" rel="noopener">
+                                        <svg class="icon">
+                                            <use xlink:href="./img/sprite.svg#face"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank" rel="noopener">
+                                        <svg class="icon">
+                                            <use xlink:href="./img/sprite.svg#insta"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank" rel="noopener">
+                                        <svg class="icon">
+                                            <use xlink:href="./img/sprite.svg#twit"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </li>
                 </ul>
@@ -359,7 +440,7 @@
         <section class="book">
             <div class="container">
                 <span class="text-subtitle">Contact Us</span>
-                <h2 class="title">Make an Appointment</h2>
+                <h3 class="title">Make an Appointment</h3>
                 <form action="#" class="form">
                     <input type="text" name="name" class="form__input" placeholder="Full Name">
                     <input type="email" name="email" class="form__input" placeholder="example@gmail.com">
@@ -396,142 +477,131 @@
     </main>
     <!--                 FOOTER                  -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer__top">
-                <div class="footer-top__logo">
-                    <svg class="icon">
-                        <use xlink:href="/img/sprite.svg#logo"></use>
-                    </svg>
-                </div>
-                <ul class="social__list">
-                    <li class="social__item">
-                        <a href="#">
-                            <svg class="icon">
-                                <use xlink:href="./img/sprite.svg#facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social__item">
-                        <a href="#">
-                            <svg class="icon">
-                                <use xlink:href="./img/sprite.svg#instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social__item">
-                        <a href="#">
-                            <svg class="icon">
-                                <use xlink:href="./img/sprite.svg#twitter"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social__item">
-                        <a href="#">
-                            <svg class="icon">
-                                <use xlink:href="./img/sprite.svg#youtube"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-
-            </div>
-            <div class="footer__bottom">
-                <div class="bottom__item">
-                    <h4>Company Info</h4>
-                    <ul class="info__list">
-                        <li class="list__item">
-                            <a href="#">About Us</a>
-                        </li>
-                        <li class="list__item">
-                            <a href="#">Carrier</a>
-                        </li>
-                        <li class="list__item">
-                            <a href="#">We are hiring</a>
-                        </li>
-                        <li class="list__item">
-                            <a href="#">Blog</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="bottom__item">
-                    <h4>Legal</h4>
-                    <ul class="info__list">
-                        <li class="list__item">
-                            <a href="#">About Us</a>
-                        </li>
-                        <li class="list__item">
-                            <a href="#">Carrier</a>
-                        </li>
-                        <li class="list__item">
-                            <a href="#">We are hiring</a>
-                        </li>
-                        <li class="list__item">
-                            <a href="#">Blog</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="bottom__item">
-                    <h4>Features</h4>
-                    <ul class="info__list">
-                        <li class="list__item">
-                            <a href="#">Business Marketing</a>
-                        </li>
-                        <li class="list__item">
-                            <a href="#">User Analytic</a>
-                        </li>
-                        <li class="list__item">
-                            <a href="#">Live Chat</a>
-                        </li>
-                        <li class="list__item">
-                            <a href="#">Unlimited Support</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="bottom__item">
-                    <h4>Resources</h4>
-                    <ul class="info__list">
-                        <li class="list__item">
-                            <a href="#">IOS & Android</a>
-                        </li>
-                        <li class="list__item">
-                            <a href="#">Watch a Demo</a>
-                        </li>
-                        <li class="list__item">
-                            <a href="#">Customers</a>
-                        </li>
-                        <li class="list__item">
-                            <a href="#">API</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="bottom__item">
-                    <h4>Get In Touch</h4>
-                    <div class="input">
-                        <input type="email" placeholder="Your Email">
-                        <button class="last-button">Subscribe</button>
+        <div class="info">
+            <div class="container">
+                <div class="footer__top">
+                    <div class="footer-top__logo">
+                        <svg class="icon">
+                            <use xlink:href="./img/sprite.svg#logo"></use>
+                        </svg>
                     </div>
-                    <p class="subtitle">Lorem ipsum dolor sit amet</p>
+                    <ul class="social__list">
+                        <li class="social__item">
+                            <a href="#" target="_blank" rel="noopener">
+                                <svg class="icon">
+                                    <use xlink:href="./img/sprite.svg#facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#" target="_blank" rel="noopener">
+                                <svg class="icon">
+                                    <use xlink:href="./img/sprite.svg#instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#" target="_blank" rel="noopener">
+                                <svg class="icon">
+                                    <use xlink:href="./img/sprite.svg#twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#" target="_blank" rel="noopener">
+                                <svg class="icon">
+                                    <use xlink:href="./img/sprite.svg#youtube"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__bottom">
+                    <div class="bottom__item">
+                        <h4>Company Info</h4>
+                        <ul class="info__list">
+                            <li class="list__item">
+                                <a href="#">About Us</a>
+                            </li>
+                            <li class="list__item">
+                                <a href="#">Carrier</a>
+                            </li>
+                            <li class="list__item">
+                                <a href="#">We are hiring</a>
+                            </li>
+                            <li class="list__item">
+                                <a href="#">Blog</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bottom__item">
+                        <h4>Legal</h4>
+                        <ul class="info__list">
+                            <li class="list__item">
+                                <a href="#">About Us</a>
+                            </li>
+                            <li class="list__item">
+                                <a href="#">Carrier</a>
+                            </li>
+                            <li class="list__item">
+                                <a href="#">We are hiring</a>
+                            </li>
+                            <li class="list__item">
+                                <a href="#">Blog</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bottom__item">
+                        <h4>Features</h4>
+                        <ul class="info__list">
+                            <li class="list__item">
+                                <a href="#">Business Marketing</a>
+                            </li>
+                            <li class="list__item">
+                                <a href="#">User Analytic</a>
+                            </li>
+                            <li class="list__item">
+                                <a href="#">Live Chat</a>
+                            </li>
+                            <li class="list__item">
+                                <a href="#">Unlimited Support</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bottom__item">
+                        <h4>Resources</h4>
+                        <ul class="info__list">
+                            <li class="list__item">
+                                <a href="#">IOS & Android</a>
+                            </li>
+                            <li class="list__item">
+                                <a href="#">Watch a Demo</a>
+                            </li>
+                            <li class="list__item">
+                                <a href="#">Customers</a>
+                            </li>
+                            <li class="list__item">
+                                <a href="#">API</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bottom__item">
+                        <h4>Get In Touch</h4>
+                        <div class="input">
+                            <input type="email" placeholder="Your Email">
+                            <button class="last-button">Subscribe</button>
+                        </div>
+                        <p class="subtitle">Lorem ipsum dolor sit amet</p>
+                    </div>
                 </div>
             </div>
         </div>
-
-        <div class="footer__wrapper">
+        <div class="footer__right">
             <div class="container">
                 <p class="made__with-love">Made With Love By Figmaland All Right Reserved </p>
             </div>
         </div>
-
     </footer>
-    <script>
-        function myFunction() {
-            var x = document.getElementById("collapse");
-            if (x.style.display === "block") {
-                x.style.display = "none";
-            } else {
-                x.style.display = "block";
-            }
-        }
-    </script>
+    <script src="./js/script.js"></script>
 </body>
-
 </html>
