@@ -1,4 +1,4 @@
-.info {
+.footer {
     background-color: $textColor;
 }
 
@@ -9,12 +9,17 @@
     padding: 40px 0;
     border-bottom: 1px solid $lightPurple;
 
-    .logo {
-        font-family: $fontMartel;
-        color: $whiteColor;
-        font-size: rem(24px);
-        line-height: 1.33;
-        margin-bottom: 50px;
+}
+
+.footer-top__logo {
+    display: flex;
+    margin-bottom: 50px;
+
+    .icon {
+        display: block;
+        width: 100px;
+        height: 32px;
+        color: #fff;
     }
 }
 
@@ -22,6 +27,11 @@
 .social__list {
     display: flex;
     margin-right: 40px;
+
+    .icon {
+        width: 24px;
+        height: 24px;
+    }
 }
 
 .social__item:not(:last-child) {
@@ -32,11 +42,11 @@
     padding: 70px 0;
     display: grid;
     grid-template-columns: 321px;
-    gap: 20px;
+    gap: 30px;
 }
 
 .bottom__item {
-    h5 {
+    h4 {
         font-family: $fontMartel;
         color: $whiteColor;
         font-size: rem(16px);
@@ -47,7 +57,9 @@
 }
 
 .list__item {
-    margin-bottom: 10px;
+    &:not(:last-child) {
+        margin-bottom: 10px;
+    }
 
     a {
         font-family: $fontOpenSans;
@@ -113,10 +125,9 @@
 
 }
 
-.rights {
+.footer .footer__wrapper {
     background: linear-gradient(270deg, #295C7A -1.04%, #0072B5 100%);
     padding: 25px 0;
-
 
     p {
         font-family: $fontOpenSans;
