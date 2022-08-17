@@ -133,22 +133,31 @@ li {
   flex-direction: row;
   justify-content: center;
 }
+.team-list__social li:not(:last-child) {
+  margin-right: 10px;
+}
 .team-list__social .icon {
   width: 24px;
   height: 24px;
-}
-.team-list__social .icon:not(:last-child) {
-  margin-right: 10px;
 }
 .team-list__social .icon:hover {
   transform: scale(150%);
 }
 
-.footer .icon {
+.footer .footer-top__logo {
+  margin-bottom: 65px;
+}
+.footer .footer-top__logo .icon {
+  display: block;
+  width: 100px;
+  height: 32px;
+  fill: #fff;
+}
+.footer .social__list .icon {
   width: 24px;
   height: 24px;
 }
-.footer .icon:hover {
+.footer .social__list .icon:hover {
   transform: scale(150%);
 }
 
@@ -319,6 +328,7 @@ li {
 }
 .comments-list__item .comments-list__person img {
   margin-right: 15px;
+  overflow: hidden;
 }
 .comments-list__item .comments-list__person .comments-list-person__info {
   display: flex;
@@ -381,13 +391,6 @@ li {
   justify-content: space-between;
   padding: 40px 0;
   border-bottom: 1px solid #364067;
-}
-.footer__top .logo {
-  font-family: "Martel", serif;
-  color: #fff;
-  font-size: 1.7142857143rem;
-  line-height: 1.33;
-  margin-bottom: 50px;
 }
 
 .social__list {
@@ -514,7 +517,7 @@ li {
   font-family: "Martel", serif;
   font-size: 2.85rem;
   font-weight: 700;
-  padding-bottom: 40px;
+  margin-bottom: 40px;
 }
 .book .container .form {
   display: grid;
