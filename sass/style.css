@@ -272,7 +272,8 @@ li {
   z-index: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .presentation__item .presentation__play {
   z-index: 5;
@@ -411,10 +412,10 @@ li {
   padding: 70px 0;
   display: grid;
   grid-template-columns: 321px;
-  gap: 30px;
+  gap: 20px;
 }
 
-.bottom__item h4 {
+.bottom__item h5 {
   font-family: "Martel", serif;
   color: #fff;
   font-size: 1.1428571429rem;
@@ -439,12 +440,30 @@ li {
 
 .input {
   display: flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   height: 56px;
 }
 .input input {
   border: 1px solid #BDBDBD;
   border-radius: 5px 0 0 5px;
+}
+.input input::-moz-placeholder {
+  padding: 15px 20px;
+  font-size: 14px;
+  line-height: 2;
+  letter-spacing: 0.2px;
+  color: #BDBDBD;
+  font-family: "Montserrat", sans-serif;
+}
+.input input:-ms-input-placeholder {
+  padding: 15px 20px;
+  font-size: 14px;
+  line-height: 2;
+  letter-spacing: 0.2px;
+  color: #BDBDBD;
+  font-family: "Montserrat", sans-serif;
 }
 .input input::placeholder {
   padding: 15px 20px;
@@ -491,6 +510,8 @@ li {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.2px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   text-align: center;
 }
@@ -546,6 +567,18 @@ li {
   padding-left: 20px;
   background-color: #F9F9F9;
 }
+.book .container .form__input::-moz-placeholder {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #BDBDBD;
+}
+.book .container .form__input:-ms-input-placeholder {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #BDBDBD;
+}
 .book .container .form__input::placeholder {
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
@@ -555,7 +588,9 @@ li {
 .book .container .form__select {
   width: 285px;
   height: 50px;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: 700;
@@ -1029,6 +1064,8 @@ li {
   }
   .footer__bottom {
     display: grid;
+    -moz-column-gap: 30px;
+         column-gap: 30px;
     grid-template-columns: 148px 152px 148px 152px 321px;
     justify-content: normal;
   }
@@ -1092,6 +1129,4 @@ li {
   .buttons {
     margin-right: 140px;
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
