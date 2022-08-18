@@ -827,85 +827,72 @@ li {
   background: #21A6DF;
 }
 
-.header {
-  min-height: 90px;
-}
-
-.wrapper {
-  margin-bottom: 100px;
-}
-
-.logo-top {
-  font-family: "Martel", serif;
-  font-weight: 700;
-  font-size: 24px;
-  letter-spacing: 0.1px;
-  color: #252B42;
-  position: absolute;
-  top: 35px;
-  left: 30px;
-}
-
-.shopping,
-.search,
-.toggler {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-}
-
-.shopping .icon {
-  position: absolute;
-  top: 40px;
-  right: 90px;
-  display: block;
-  width: 16px;
-  height: 16px;
-}
-
-.search .icon {
-  position: absolute;
-  top: 40px;
-  right: 140px;
-  width: 16px;
-  height: 16px;
-}
-
-.toggler .icon {
-  position: absolute;
-  top: 40px;
-  right: 40px;
-  display: block;
-  width: 22px;
-  height: 14px;
-}
-
-.toggler .icon:hover {
-  transform: scale(130%);
-}
-
-.search .icon:hover {
-  transform: scale(150%);
-}
-
-.shopping .icon:hover {
-  transform: scale(150%);
-}
-
-.nav-bar {
+.header .container {
   overflow: hidden;
   position: relative;
-  top: 100px;
 }
-.nav-bar .menu {
-  display: none;
-}
-.nav-bar .menu-item {
-  text-align: center;
-  padding: 0 5px;
+
+.header .header-logo {
+  width: 100px;
+  height: 32px;
+  margin-top: 35px;
   margin-bottom: 30px;
 }
-.nav-bar .menu-item a {
+.header .shopping,
+.header .search,
+.header .toggler {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+.header .shopping .icon,
+.header .search .icon {
+  width: 16px;
+  height: 16px;
+}
+.header .toggler .icon {
+  position: absolute;
+  top: 40px;
+  right: 15px;
+  width: 18px;
+  height: 14px;
+}
+.header .shopping .icon {
+  position: absolute;
+  top: 40px;
+  right: 80px;
+  display: block;
+}
+.header .search .icon {
+  position: absolute;
+  top: 40px;
+  right: 127px;
+}
+.header .toggler .icon:hover {
+  transform: scale(130%);
+}
+.header .search .icon:hover {
+  transform: scale(150%);
+}
+.header .shopping .icon:hover {
+  transform: scale(150%);
+}
+.header .nav-bar {
+  display: none;
+}
+.header .nav-bar .menu {
+  height: 90vh;
+  padding-top: 96px;
+}
+.header .nav-bar .menu-item {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.header .nav-bar .menu-item:last-child {
+  margin-bottom: 0;
+}
+.header .nav-bar .menu-item a {
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   font-size: 30px;
@@ -914,7 +901,7 @@ li {
   letter-spacing: 0.2px;
   color: #737373;
 }
-.nav-bar .menu-item a:hover {
+.header .nav-bar .menu-item a:hover {
   color: #252B42;
 }
 
@@ -1002,42 +989,41 @@ li {
     height: 100px;
     z-index: 100;
   }
-  .wrapper {
-    height: 100px;
+  .header .container {
+    overflow: hidden;
     position: relative;
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
-    margin-bottom: auto;
   }
-  .logo-top {
-    left: 0;
+  .header .shopping,
+.header .search,
+.header .toggler {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
   }
-  .buttons {
-    margin-right: 80px;
+  .header .shopping .icon,
+.header .search .icon {
+    width: 16px;
+    height: 16px;
   }
-  .toggler .icon {
-    right: 0;
-  }
-  .shopping .icon {
-    position: static;
-  }
-  .search .icon {
-    position: static;
-    margin-right: 22px;
-  }
-  .nav-bar {
-    overflow: hidden;
-    top: 0;
+  .header .nav-bar {
+    display: inline;
     margin-right: 42px;
   }
-  .nav-bar .menu-item {
+  .header .nav-bar .menu {
+    height: auto;
+    padding-top: 0;
+    display: inline-flex;
+  }
+  .header .nav-bar .menu-item {
     display: inline-flex;
     margin-right: 26px;
     margin-bottom: 0;
   }
-  .nav-bar .menu-item a {
+  .header .nav-bar .menu-item a {
     font-size: 14px;
   }
 }
@@ -1106,9 +1092,6 @@ li {
   }
   .help .left-part h2 {
     font-size: 58px;
-  }
-  .buttons {
-    margin-right: 140px;
   }
 }
 
